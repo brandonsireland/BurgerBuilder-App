@@ -1,3 +1,15 @@
+## Using Firebase from Google for Server. 
+
+You will need to create an instance of axios with your own credentials.
+```
+import axios from 'axios';
+
+const instance = axios.create({
+    baseURL: '< your firebase url>'
+});
+
+export default instance;
+```
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
