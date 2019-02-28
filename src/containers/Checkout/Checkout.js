@@ -9,6 +9,7 @@ class Checkout extends Component {
         ingredients: null,
         price: 0
     }
+
     componentWillMount(){
         const query = new URLSearchParams(this.props.location.search);
         const ingredients = {};
@@ -21,6 +22,7 @@ class Checkout extends Component {
             }
         }
         this.setState({ingredients: ingredients, totalPrice: price})
+        console.log(this.state.price)
     }
     checkoutCancelledHandler =() => {
         this.props.history.goBack();
